@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="WasmTricks.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:WasmTricks"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button
+            Grid.Row="0"
+            Click="OnVoicesButtonClicked"
+            Content="Voices" />
+        <Button
+            Grid.Row="1"
+            Click="OnLibTestButtonClicked"
+            Content="LibTest" />
+        <Button
+            Grid.Row="2"
+            Click="OnHtml2CanvasButtonClicked"
+            Content="html2canvas" />
+        <TextBlock
+            x:Name="_textBlock"
+            TextWrapping="WrapWholeWords"
+            MaxLines="200"
+            Grid.Row="3"
+            Margin="20"
+            FontSize="30"
+            Text="Hello, world!" />
+    </Grid>
+</Page>
